@@ -1,0 +1,71 @@
+:root {
+  --background-color: #333;
+  --text-color: #000;
+  --linear-gradient: linear-gradient(
+    to left bottom,
+    #16f1c4,
+    #00ead9,
+    #00e2e9,
+    #00d9f3,
+    #0bcff8
+  );
+  --password-background: rgba(0, 0, 0, 0.8);
+  --password-text-color: #16f1c4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: var(--linear-gradient);
+  padding: 3rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.character-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.character-number-range {
+  width: 2rem;
+}
+
+.title {
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.password-text {
+  padding: 1rem;
+  border: 2px solid black;
+  height: 2rem;
+  width: 350px;
+  text-align: center;
+  background: var(--password-background);
+  color: var(--password-text-color);
+}
+
+form label {
+  font-weight: bold;
+}
