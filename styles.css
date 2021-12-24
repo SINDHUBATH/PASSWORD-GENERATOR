@@ -67,6 +67,9 @@ body {
   background: var(--password-background);
   color: var(--password-text-color);
   word-break: break-all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form label {
@@ -87,4 +90,25 @@ form label {
 .btn:hover {
   color: #00d9f3;
   background-color: #333;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+    padding: 1rem;
+  }
+  .password-text {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    height: 4rem;
+    width: 200px;
+    background: white;
+    color: black;
+  }
+  .btn {
+    grid-column: span 2;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+  }
 }
