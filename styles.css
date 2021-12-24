@@ -57,15 +57,34 @@ body {
 }
 
 .password-text {
+  font-family: cursive;
   padding: 1rem;
   border: 2px solid black;
+  border-radius: 0.5rem;
   height: 2rem;
   width: 350px;
   text-align: center;
   background: var(--password-background);
   color: var(--password-text-color);
+  word-break: break-all;
 }
 
 form label {
   font-weight: bold;
+}
+
+.btn {
+  grid-column: span 2;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  /* color: transparent;  */
+  background-color: transparent;
+  font-weight: bolder;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #00d9f3;
+  background-color: #333;
 }
